@@ -10,6 +10,10 @@ body {
   font-size: 3vw;
 } 
 
+.karar svg {
+  width: 3vw;
+} 
+
 .islem span {
   font-size: 5vw;
 }

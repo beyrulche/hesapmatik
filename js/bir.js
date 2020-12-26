@@ -189,7 +189,6 @@ const kontrol = (a, b, c) => {
     if (parseInt(a) + parseInt(b) === parseInt(c)) {
 
         son = 'success';
-        anim('sonucD');
         sonucD.innerHTML++;
         generateAnim(dParmak);
         generateAnim(dParmak);
@@ -198,7 +197,6 @@ const kontrol = (a, b, c) => {
     }
     else {
         sonucY.innerHTML++;
-        anim('sonucY');
         generateAnim(yParmak, 'red');
         generateAnim(yParmak, 'red');
         generateAnim(yParmak, 'red');

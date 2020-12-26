@@ -1,0 +1,45 @@
+body {
+  padding-top: 0rem;
+}
+
+.sayilar button{
+  font-size: 5vw;
+} 
+
+.karar button{
+  font-size: 50px;
+} 
+
+.islem span {
+  font-size: 5vw;
+}
+
+.sonuc button{
+  font-size: 25px;
+}
+
+#paspas span {
+  font-size: 20px;
+}
+
+#bilgim span {
+  font-size: 20px;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 10vw;
+  font-variation-settings: 'wght' 100, 'wdth' 85;
+  animation: breathe 4000ms infinite forwards;
+}
+
+@keyframes breathe {
+  60% {
+    font-variation-settings: 'wght' 700, 'wdth' 100;
+  }
+  
+  100% {
+    font-variation-settings: 'wght' 100, 'wdth' 85;
+  }
+}
+

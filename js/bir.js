@@ -98,6 +98,7 @@ const rasgele = () => {
     let ii = Math.floor(Math.random() * 100) % islemList.length;
     let islem = islemList[ii];
     let tersine = {'-': '+', '/':'*'};
+    islem === '/' && sayiList2[s2] === 0 && sayiList2[s2]++;
     let sayi1 = ['-', '/'].includes(islem) ? islemYap(sayiList1[s1], tersine[islem], sayiList2[s2]) : sayiList1[s1];
     let sayi2 = sayiList2[s2];
     hesap1.innerHTML = sayi1;

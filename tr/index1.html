@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="BH">
-  <title>The four operations</title>
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <link href="./css/hesap.css" rel="stylesheet">
-   <link rel="shortcut icon" href="favicon.ico" />
+  <title>Dört İşlem</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/hesap.css" rel="stylesheet">
+   <link rel="shortcut icon" href="../favicon.ico" />
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKMXEFKRDT"></script>
 <script>
@@ -35,10 +35,16 @@
           </path>
         </svg><span class="visually-hidden">Button</span>
       </button>
-	  
-	  
+      <div>
+        <form action="https://www.paypal.com/donate" method="post" target="_blank">
+          <input type="hidden" name="hosted_button_id" value="77866XD2T7DRY" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit"
+            title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+          <img alt="" border="0" src="https://www.paypal.com/en_BG/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+        <img class="qr d-none d-xl-block .d-lg-block" alt="" border="0" src="qr.png" style='margin: 4px;' />
+      </div>
     </nav>
-	
   </header>
 
   <main class="container">
@@ -96,7 +102,7 @@
             <path
               d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
           </svg>
-          Calculate
+          Hesapla
         </button>
         <button type="button" class="btn btn-info col-sm" onclick="temizle()">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-patch-exclamation-fill"
@@ -104,7 +110,7 @@
             <path
               d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
           </svg>
-          Clear
+          Sil
         </button>
 
         <button type="button" class="btn btn-primary col-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -113,7 +119,7 @@
             <path
               d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z" />
           </svg>
-          Show me
+          Cevap
         </button>
       </div>
     </div>
@@ -206,34 +212,25 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Settings</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">Ayarlar</h5>
         </div>
         <div id='ayar' class="modal-body">
-          <div id="say1">Number 1:<br> </div>
+          <div id="say1">1. Numara:<br> </div>
           <hr>
-          <div id="say2">Number 2:<br> </div>
+          <div id="say2">2. Numara:<br> </div>
           <hr>
-          <div id="islemTip">Operations:<br></div>
-		  <hr>
-		  <div>Dil: 
-		  <a href="http://math123.org/tr/"><button type="button" class="btn btn-success"  value="Dil">
-          Türkçe
-			</button></a><br></div>
+          <div id="islemTip">İşlemler:<br></div>
         </div>
-		
         <div class="modal-footer">
-          <button type="button" data-bs-dismiss="modal" class="btn btn-primary" onclick="listeGuncelle()">Save</button>
+          <button type="button" data-bs-dismiss="modal" class="btn btn-primary" onclick="listeGuncelle()">Kaydet</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="kafe">        
-    <a  href="https://www.buymeacoffee.com/evdrhu0ln" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=evdrhu0ln&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a>
-  </div>
   <div id='brd'></div>
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/anim.js"></script>
-  <script src="./js/bir.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/anim.js"></script>
+  <script src="../js/bir.js"></script>
 </body>
 
 </html>
